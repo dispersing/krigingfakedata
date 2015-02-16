@@ -61,7 +61,7 @@
 	mod.seq <- seq(from = min(px) , to = max(px) , length = 100)
 	pred.mod <- predict(nls.mod , list(px = mod.seq))
 	
-	plot(sys.time ~ px , xlim = c(0 , max(pix)) , ylim = c(0 , max(y)))
+	plot(sys.time ~ px , xlim = c(0 , max(px)) , ylim = c(0 , max(y)))
 	lines(mod.seq , pred.mod , lty = 2)
 
 # 9. write a function based on the equation to see how long it will take for px pixels
